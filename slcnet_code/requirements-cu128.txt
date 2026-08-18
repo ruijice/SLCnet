@@ -1,0 +1,15 @@
+# Server target:
+#   Python 3.10-3.14
+#   NVIDIA driver 580.159.03, nvidia-smi CUDA Version 13.0
+#   Install PyTorch CUDA 12.8 wheels; do not build PyTorch from source.
+
+torch>=2.1
+numpy>=1.24
+pandas>=2.0
+PyYAML>=6.0
+tqdm>=4.66
+rich>=13.0
+opencv-python-headless>=4.8
+pycocotools>=2.0.7
+# The detector is implemented with native PyTorch modules; no external
+# detection framework is required.
